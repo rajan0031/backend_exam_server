@@ -55,6 +55,8 @@ public class UserDto {
         private String name;
         private String email;
         private String message;
+        private String token;
+        private String refreshToken;
     }
 
     // this is the loginrequestobj
@@ -76,9 +78,31 @@ public class UserDto {
     @NoArgsConstructor
     @ToString
     public static class ProfileResponse {
+        private Long id;
         private String name;
         private String email;
         private String role;
+
+    }
+
+    @Getter
+    @Setter
+    @AllArgsConstructor
+    @NoArgsConstructor
+    @ToString
+    public static class ValidTokenDto {
+        private String token;
+        private String refreshToken;
+        private String message;
+    }
+
+    @Getter
+    @Setter
+    @AllArgsConstructor
+    @NoArgsConstructor
+    @ToString
+    public static class RefreshTokenRequest {
+        private String refreshToken;
 
     }
 
