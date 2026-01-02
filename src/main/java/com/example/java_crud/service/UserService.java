@@ -11,12 +11,10 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import org.springframework.stereotype.Service;
-import org.springframework.web.server.ResponseStatusException;
 
 import com.example.java_crud.Exception.CustomException;
 import com.example.java_crud.dtos.UserDto.LoginResponse;
 
-import java.util.Arrays;
 import java.util.List;
 import com.example.java_crud.dtos.UserDto.ProfileResponse;
 import com.example.java_crud.dtos.UserDto.ValidTokenDto;
