@@ -14,7 +14,7 @@ import java.util.Map;
 @Component
 public class JwtUtils {
     private final Key signingKey;
-    private final long expirationMillis = 60 * 1000;
+    private final long expirationMillis = 7 * 24 * 60 * 60 * 1000;
     private final long refreshTokenExpirationMillis = 7 * 24 * 60 * 60 * 1000;
 
     public JwtUtils(@Value("${jwt.secret}") String secretKey) {

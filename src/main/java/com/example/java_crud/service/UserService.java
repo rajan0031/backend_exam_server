@@ -45,7 +45,7 @@ public class UserService {
         var password = user.getPassword();
         var role = user.getRole();
 
-        // Validate name is valid name 
+        // Validate name is valid name
         if (name == null || name.isEmpty()) {
             throw new CustomException(HttpStatus.BAD_REQUEST, "Name is required");
         }
@@ -186,4 +186,7 @@ public class UserService {
             return new ValidTokenDto(null, null, "Invalid or expired refresh token: " + ex.getMessage());
         }
     }
+
+    // api function to get the role of the currnet logged in user now
+
 }

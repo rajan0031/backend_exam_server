@@ -2,6 +2,7 @@ package com.example.java_crud.repository;
 
 import java.util.List;
 
+import com.example.java_crud.dtos.TestDto;
 import com.example.java_crud.model.Test;
 
 import org.springframework.data.jpa.repository.JpaRepository;
