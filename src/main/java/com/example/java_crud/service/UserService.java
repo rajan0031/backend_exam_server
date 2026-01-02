@@ -45,7 +45,7 @@ public class UserService {
         var password = user.getPassword();
         var role = user.getRole();
 
-        // Validate name
+        // Validate name is valid name 
         if (name == null || name.isEmpty()) {
             throw new CustomException(HttpStatus.BAD_REQUEST, "Name is required");
         }
